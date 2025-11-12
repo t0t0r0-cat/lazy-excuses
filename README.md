@@ -22,21 +22,17 @@ Built with [Rich](https://github.com/Textualize/rich) for colorful terminal outp
 git clone https://github.com/t0t0r0-cat/lazy-excuses.git
 cd lazy-excuses
 ```
-### 2. Make the installer executable
+### 2. Create command
+
 ```bash
-chmod +x install.sh
+cd /.local/bin
+nano lazy_excuse
 ```
-### 3. Run the installer
-```bash
-./install.sh
+```nano
+#!/usr/bin/env bash
+source "/home/YOUR-USER-HERE/.venvs/lazyexcuses/bin/activate"
+python "$HOME/lazy-excuses/lazyExcuses.py" "$@"
 ```
-The installer will:
-
-+Install Python dependencies (rich, ollama).
-
-+Copy necessary project files.
-
-+Set up a convenient command (run_excuse) to run the program from anywhere.
 ### 4. Verify the installation
 ```bash
 run_excuse
