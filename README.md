@@ -19,7 +19,7 @@ Built with [Rich](https://github.com/Textualize/rich) for colorful terminal outp
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/lazy-excuses.git
+git clone https://github.com/t0t0r0-cat/lazy-excuses.git
 cd lazy-excuses
 ```
 ### 2. Make the installer executable
