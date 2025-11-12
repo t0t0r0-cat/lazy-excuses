@@ -1,17 +1,23 @@
-# lazy-excuses
+# Lazy Excuses 💤
 
-Clone the repo:
+Generate quick, clever excuses for any situation using AI.  
+Perfect for when you need a short, concise excuse for work, school, or daily life.  
 
-```git clone https://github.com/t0t0r0-cat/lazy-excuses.git```
+---
 
-Go to repo clone:
+## Features
 
-```cd lazy-excuses```
+- Generate AI-powered excuses in one line.
+- Easy-to-use command-line interface.
+- Colored output using [Rich](https://github.com/willmcgugan/rich) for better readability.
+- Lightweight and fast.
 
-Make the installer executable
+---
 
-```chmod +x install_lazyexcuses.sh```
+## Demo
 
-Run the installer
-
-```./install_lazyexcuses.sh```
+```bash
+$ python3 lazyExcuses.py
+what do you need an excuse for... 
+Example: not going to a zoom meeting
+> I can’t attend the meeting because my cat broke the Wi-Fi router.
