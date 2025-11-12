@@ -1,23 +1,23 @@
-# Lazy Excuses 💤
+# Lazy Excuses
 
-Generate quick, clever excuses for any situation using AI.  
-Perfect for when you need a short, concise excuse for work, school, or daily life.  
+A small Python tool that generates clever, concise excuses for any situation. Perfect for when you need a quick way to explain why you can’t attend a meeting, complete a task, or any other dilemma—without the hassle of thinking one up yourself.  
+
+Built with [Rich](https://github.com/Textualize/rich) for colorful terminal output and [Ollama](https://ollama.com/) for AI-powered excuse generation.
 
 ---
 
 ## Features
 
-- Generate AI-powered excuses in one line.
-- Easy-to-use command-line interface.
-- Colored output using [Rich](https://github.com/willmcgugan/rich) for better readability.
-- Lightweight and fast.
+- Generates short, witty excuses based on your input.
+- Beautiful, color-coded terminal output.
+- Works on Linux, macOS, and Windows (via Python).  
 
 ---
 
-## Demo
+## Installation
+
+### 1. Clone the repository
 
 ```bash
-$ python3 lazyExcuses.py
-what do you need an excuse for... 
-Example: not going to a zoom meeting
-> I can’t attend the meeting because my cat broke the Wi-Fi router.
+git clone https://github.com/YOUR_USERNAME/lazy-excuses.git
+cd lazy-excuses
