@@ -22,7 +22,27 @@ Built with [Rich](https://github.com/Textualize/rich) for colorful terminal outp
 git clone https://github.com/t0t0r0-cat/lazy-excuses.git
 cd lazy-excuses
 ```
-### 2. Create command
+### 2. Create Venv
+```bash
+python -m venv venv
+```
+If you use bash:
+```bash
+source venv/bin/activate
+```
+Fish:
+```fish
+source venv/bin/activate.fish
+```
+### 3. Update pip
+```bash
+pip install --upgrade pip
+```
+### 4. Install dependincies
+```bash
+pip install rich ollama
+```
+### 5. Create command
 
 ```bash
 cd /.local/bin
@@ -33,7 +53,7 @@ nano lazy_excuse
 source "/home/YOUR-USER-HERE/.venvs/lazyexcuses/bin/activate"
 python "$HOME/lazy-excuses/lazyExcuses.py" "$@"
 ```
-### 4. Verify the installation
+### 6. Verify the installation
 ```bash
-run_excuse
+lazy_excuse
 ```
