@@ -21,3 +21,23 @@ Built with [Rich](https://github.com/Textualize/rich) for colorful terminal outp
 ```bash
 git clone https://github.com/YOUR_USERNAME/lazy-excuses.git
 cd lazy-excuses
+```
+### 2. Make the installer executable
+```bash
+chmod +x install.sh
+```
+### 3. Run the installer
+```bash
+./install.sh
+```
+The installer will:
+
++Install Python dependencies (rich, ollama).
+
++Copy necessary project files.
+
++Set up a convenient command (run_excuse) to run the program from anywhere.
+### 4. Verify the installation
+```bash
+run_excuse
+```
