@@ -1,19 +1,3 @@
-import subprocess
-import sys
-
-# --- Auto-install missing dependencies ---
-def ensure_package(package):
-    try:
-        __import__(package)
-    except ModuleNotFoundError:
-        print(f"[bold yellow]🔧 '{package}' not found. Installing it now...[/bold yellow]")
-        subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", package],
-            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
-        )
-        print(f"[bold green]✅ '{package}' installed successfully![/bold green]")
-
-# Ensure required packages
 ensure_package("rich")
 ensure_package("ollama")
 
@@ -24,7 +8,7 @@ import json
 
 # --- Main Program ---
 print("[bold magenta]what do you need an excuse for...[/bold magenta] \n [italic green]Example: not going to a zoom meeting[/italic green]")
-problem = input("> ")
+problem = input("make an excuse for... ")
 
 aiprompt = f"make an excuse for {problem} in a short concise sentence"
 
